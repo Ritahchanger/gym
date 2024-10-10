@@ -2,19 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   /* font-family:"Outfit",sans-serif; */
 }
+:root {
+  --pumpkinOrange: #ff7518;
 
-.container{
+  --faintBlack:#333;
 
-  max-width:1200px;
+  --background:#000;
 
+  --color-white:#fff;
+}
+
+.container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 0 1rem;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  /* background: #f1f1f1; */
+  background:var(--pumpkinOrange);
+}
+::-webkit-scrollbar-thumb {
+  background:var( --color-white);
+}
+::-webkit-scrollbar-thumb:hover {
+  background:var( --color-white);
+}
+
+.container .navigation-btn {
+  background: #ff7518;
+  padding: 0.3rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.hero-btn{
+  background:var(--pumpkinOrange);
+  color:var(--color-white);
+  padding:0.4rem 3rem;
+  border:none;
+  border:2px solid var(--pumpkinOrange);
+  display:flex;
+}
+
+.hero-btn:hover{
+
+  background:transparent;
+
+  color:var(--pumpkinOrange);
+
+}
+
+body{
+  background:var(--background);
+}
+
+img {
+  width: 100%;
 }
