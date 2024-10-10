@@ -1,8 +1,9 @@
 import NavigateArrow from "@/components/NavigateArrow/NavigateArrow";
+import { FaHeart } from "react-icons/fa";
 const SectionC = () => {
   return (
     <div className="mt-[3rem]">
-      <div className="container text-white">
+      <div className="container text-white bg-[--faintBlack] py-4 px-4">
         <div className="grid sm:grid-cols-1 md:grid-cols-2">
           <div>
             <NavigateArrow />
@@ -12,7 +13,11 @@ const SectionC = () => {
               Aspernatur voluptatum placeat voluptatibus quisquam pariatur
               deserunt debitis autem eaque modi! Totam?
             </p>
-            <button>Success</button>
+            <button className="bg-orange-600 rounded-full h-[30px] w-[30px] border-none flex items-center text-center justify-center ">
+              <span>
+                <FaHeart />
+              </span>
+            </button>
           </div>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 g">
             <div className="p-3 bg-slate-700 flex-row items-center justify-center relative">
