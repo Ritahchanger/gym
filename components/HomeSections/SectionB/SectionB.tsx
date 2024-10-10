@@ -1,4 +1,4 @@
-import NavigateArrow from "../NavigateArrow/NavigateArrow";
+import NavigateArrow from "../../NavigateArrow/NavigateArrow";
 import { IoMdAddCircle } from "react-icons/io";
 const SectionB = () => {
   return (
@@ -7,7 +7,7 @@ const SectionB = () => {
         <NavigateArrow />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-center">
           <div className="card">
-            <div className="bg-slate-800 py-3 px-5 rounded-lg">
+            <div className="bg-slate-700 py-3 px-5 rounded-lg">
               <div className="flex justify-between items-center">
                 <p className="text-3xl">Premium</p>
                 <p className="text-2xl font-semibold">$12.567</p>
@@ -26,14 +26,14 @@ const SectionB = () => {
             </div>
           </div>
           <div className="card">
-            <p className="text-5xl font-semibold text-center">
+            <p className="text-5xl font-semibold text-start">
               Flexible membership plans to suit your pocket
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 mt-8 gap-5">
               <div className="card bg-slate-700 p-3 rounded-lg">
-                <p className="text-3xl text-center">Advanced</p>
+                <p className="text-3xl text-start">Advanced</p>
 
-                <button className="universal-btn">
+                <button className="universal-btn my-2">
                   Join{" "}
                   <span>
                     <IoMdAddCircle />
@@ -46,8 +46,8 @@ const SectionB = () => {
                 </p>
               </div>
               <div className="card bg-slate-700 p-3 rounded-lg">
-                <p className="text-3xl text-center">Basic</p>
-                <button className="universal-btn">
+                <p className="text-3xl text-start">Basic</p>
+                <button className="universal-btn  my-2">
                   Join{" "}
                   <span>
                     <IoMdAddCircle />
@@ -59,9 +59,9 @@ const SectionB = () => {
                   goals, this plan offers:
                 </p>
               </div>
-              <div className="card bg-slate-700 p-3 rounded-lg">
-                <p className="text-3xl text-center">Premium</p>
-                <button className="universal-btn">
+              <div className="card bg-slate-700 p-3 rounded-lg mb-5">
+                <p className="text-3xl text-start">Premium</p>
+                <button className="universal-btn  my-2">
                   Join{" "}
                   <span>
                     <IoMdAddCircle />

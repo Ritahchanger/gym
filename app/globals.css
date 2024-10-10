@@ -44,6 +44,13 @@
   background: var(--color-white);
 }
 
+body {
+  background: var(--background);
+}
+
+img {
+  width: 100%;
+}
 .container .navigation-btn {
   background: #ff7518;
   padding: 0.3rem 1.5rem;
@@ -71,10 +78,20 @@
     0 0 18px var(--pumpkinOrange);
 }
 
-body {
-  background: var(--background);
+.universal-btn{
+
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  padding:0.3rem 2rem;
+  background: var(--burntOrange);
+  border-radius:30px;
 }
 
-img {
-  width: 100%;
+.universal-btn span{
+  margin-left:0.5rem;
+  
 }
+
+
+
