@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="nav">
+    <nav className="nav fixed w-full left-0 right-0 top-0 z-20">
       <div className="container flex justify-between h-16 items-center">
         <div>
           <a
@@ -41,7 +41,9 @@ const Navbar = () => {
         </div>
 
         <div>
-          <button className="text-[var(--pumpkinOrange)] text-4xl cursor-pointer">&#9776;</button>
+          <button className="text-[var(--pumpkinOrange)] text-4xl cursor-pointer">
+            &#9776;
+          </button>
         </div>
       </div>
     </nav>

@@ -13,11 +13,13 @@
 :root {
   --pumpkinOrange: #ff7518;
 
-  --faintBlack:#333;
+  --faintBlack: #333;
 
-  --background:#000;
+  --burntOrange:#CC5500;
 
-  --color-white:#fff;
+  --background: #000;
+
+  --color-white: #fff;
 }
 
 .container {
@@ -33,13 +35,13 @@
 }
 ::-webkit-scrollbar-track {
   /* background: #f1f1f1; */
-  background:var(--pumpkinOrange);
+  background: var(--pumpkinOrange);
 }
 ::-webkit-scrollbar-thumb {
-  background:var( --color-white);
+  background: var(--color-white);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background:var( --color-white);
+  background: var(--color-white);
 }
 
 .container .navigation-btn {
@@ -49,25 +51,28 @@
   border-radius: 5px;
 }
 
-.hero-btn{
-  background:var(--pumpkinOrange);
-  color:var(--color-white);
-  padding:0.4rem 3rem;
-  border:none;
-  border:2px solid var(--pumpkinOrange);
-  display:flex;
+
+
+.hero-btn {
+  background: var(--pumpkinOrange);
+  color: var(--color-white);
+  padding: 0.4rem 3rem;
+  border: none;
+  border: 2px solid var(--pumpkinOrange);
+  display: flex;
 }
 
-.hero-btn:hover{
+.hero-btn:hover {
+  background: transparent;
 
-  background:transparent;
+  color: var(--pumpkinOrange);
 
-  color:var(--pumpkinOrange);
-
+  box-shadow: 0 0 5px var(--pumpkinOrange), 0 0 10px var(--pumpkinOrange),
+    0 0 18px var(--pumpkinOrange);
 }
 
-body{
-  background:var(--background);
+body {
+  background: var(--background);
 }
 
 img {

@@ -16,8 +16,20 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero relative">
       <Navbar />
+      <video
+      
+      className="absolute inset-0 w-full h-full object-cover"
+
+      autoPlay
+
+      loop
+
+      muted
+      
+      src="./assets/images/bg.mp4"></video>
+       {/* <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.75),rgba(120,0,0,0.95))] z-10"></div> */}
       <div className="swiper-cont text-white relative">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -36,14 +48,14 @@ const Hero = () => {
           <SwiperSlide>
             <div className="hero-inside h-[100%]">
               <div className="container">
-                <div className="content">
+                <div className="content z-10">
                   <h1 className="title text-4xl md:text-5xl font-bold leading-tight mb-4">
                     Welcome to Our Fitness Center
                   </h1>
                   <p className="text-lg md:text-xl leading-relaxed mb-6">
                     Join us today for a healthier lifestyle!
                   </p>
-                  <button className="navigation-btn">Get Started</button>
+                  <button className="hero-btn">Get Started</button>
                 </div>
               </div>
             </div>
@@ -58,7 +70,7 @@ const Hero = () => {
                   <p className="text-lg md:text-xl leading-relaxed mb-6">
                     Work with expert trainers to achieve your goals.
                   </p>
-                  <button className="navigation-btn">Learn More</button>
+                  <button className="hero-btn">Learn More</button>
                 </div>
               </div>
             </div>
@@ -73,9 +85,7 @@ const Hero = () => {
                   <p className="text-lg md:text-xl leading-relaxed mb-6">
                     Experience the latest in fitness technology.
                   </p>
-                  <button className="navigation-btn">
-                    View Our Facilities
-                  </button>
+                  <button className="hero-btn">View Our Facilities</button>
                 </div>
               </div>
             </div>
@@ -90,7 +100,7 @@ const Hero = () => {
                   <p className="text-lg md:text-xl leading-relaxed mb-6">
                     Join fun and motivating group classes.
                   </p>
-                  <button className="navigation-btn">Check Schedule</button>
+                  <button className="hero-btn">Check Schedule</button>
                 </div>
               </div>
             </div>
@@ -105,18 +115,18 @@ const Hero = () => {
                   <p className="text-lg md:text-xl leading-relaxed mb-6">
                     Enjoy exclusive perks as a member of our gym.
                   </p>
-                  <button className="navigation-btn">Sign Up Now</button>
+                  <button className="hero-btn">Sign Up Now</button>
                 </div>
               </div>
             </div>
           </SwiperSlide>
         </Swiper>
-        <button className="button-next-slide absolute top-1/2 right-0 z-10 bg-[var(--pumpkinOrange)] p-2 sharp cursor-pointer">
+        <button className="button-next-slide absolute top-1/2 right-0 z-10 bg-[var(--pumpkinOrange)] p-2 sharp cursor-pointer btn-swap transition-all duration-500">
           <span>
             <FaArrowRight />
           </span>
         </button>
-        <button className="button-prev-slide absolute top-1/2 left-0 z-10 bg-[var(--pumpkinOrange)] p-2 sharp cursor-pointer">
+        <button className="button-prev-slide absolute top-1/2 left-0 z-10 bg-[var(--pumpkinOrange)] p-2 sharp cursor-pointer btn-swap transition-all duration-500">
           <span>
             <FaArrowLeft />
           </span>

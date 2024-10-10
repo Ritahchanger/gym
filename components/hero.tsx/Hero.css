@@ -1,14 +1,14 @@
 .hero {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("https://images.pexels.com/photos/2247179/pexels-photo-2247179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  /* background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(120, 0, 0, 0.95)),
+    url("https://images.pexels.com/photos/2247179/pexels-photo-2247179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
 
   background-position: center;
 
   background-size: cover;
 
-  background-attachment:fixed;
+  background-attachment: fixed;
 }
 
 .hero .swiper-cont {
@@ -17,6 +17,11 @@
 
 .hero .hero-inside {
   position: relative;
+}
+
+.hero .btn-swap:hover {
+  box-shadow: 0 0 5px var(--pumpkinOrange), 0 0 10px var(--pumpkinOrange),
+    0 0 20px var(--pumpkinOrange);
 }
 
 .hero .hero-inside .content {
