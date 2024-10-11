@@ -26,8 +26,8 @@ const SectionC = () => {
                 alt=""
                 className="h-full"
               />
-              <div className="absolute bottom-6 left-[2rem]">
-                <p className="text-1xl">Sasha Angelica</p>
+              <div className="absolute bottom-6 left-[2rem] bg-[rgba(0,0,0,0.8)] p-3 rounded-lg">
+                <p className="text-1xl">Ivy Anguas</p>
                 <button className="bg-orange-600 sharp px-3 border">
                   Read more
                 </button>
@@ -35,12 +35,12 @@ const SectionC = () => {
             </div>
             <div className="p-3 bg-slate-700 flex-row items-center justify-center relative">
               <img
-                src="https://images.pexels.com/photos/6551174/pexels-photo-6551174.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images.pexels.com/photos/3289711/pexels-photo-3289711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt=""
                 className="h-full"
               />
-              <div className="absolute bottom-6 left-[2rem]">
-                <p className="text-1xl">Sasha Angelica</p>
+              <div className="absolute bottom-6 left-[2rem] bg-[rgba(0,0,0,0.8)] p-3 rounded-lg">
+                <p className="text-1xl">Kelvin Ndambo</p>
                 <button className="bg-orange-600 sharp px-3 border">
                   Read more
                 </button>
