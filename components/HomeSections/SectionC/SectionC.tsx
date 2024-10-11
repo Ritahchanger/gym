@@ -1,5 +1,5 @@
+import LoveIcon from "@/components/LoveIcon/LoveIcon";
 import NavigateArrow from "@/components/NavigateArrow/NavigateArrow";
-import { FaHeart } from "react-icons/fa";
 const SectionC = () => {
   return (
     <div className="mt-[3rem] ">
@@ -15,7 +15,7 @@ const SectionC = () => {
             </p>
             <button className="bg-orange-600 rounded-full h-[30px] w-[30px] border-none flex items-center text-center justify-center ">
               <span>
-                <FaHeart />
+                <LoveIcon/>
               </span>
             </button>
           </div>

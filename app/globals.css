@@ -15,7 +15,7 @@
 
   --faintBlack: #333;
 
-  --burntOrange:#CC5500;
+  --burntOrange: #cc5500;
 
   --background: #000;
 
@@ -58,8 +58,6 @@ img {
   border-radius: 5px;
 }
 
-
-
 .hero-btn {
   background: var(--pumpkinOrange);
   color: var(--color-white);
@@ -78,20 +76,21 @@ img {
     0 0 18px var(--pumpkinOrange);
 }
 
-.universal-btn{
-
-  display:flex;
-  align-items:center;
+.universal-btn {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding:0.3rem 2rem;
+  padding: 0.3rem 2rem;
   background: var(--burntOrange);
-  border-radius:30px;
+  border-radius: 30px;
 }
 
-.universal-btn span{
-  margin-left:0.5rem;
-  
+.universal-btn span {
+  margin-left: 0.5rem;
 }
 
-
-
+.sub-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--pumpkinOrange);
+}

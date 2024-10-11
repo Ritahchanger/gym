@@ -1,5 +1,7 @@
-import Logo from "../Logo/Logo";
 import "./Footer.css";
+
+import SocialMediaIcons from "../SocialMediaIcons/SocialMediaIcons";
+import LoveIcon from "../LoveIcon/LoveIcon";
 
 const Footer = () => {
   const footerLinks = [
@@ -61,10 +63,10 @@ const Footer = () => {
               </p>
               <ul className=" flex-col items-center justify-center">
                 {section.links.map((link, idx) => (
-                  <li key={idx} className="mb-1 p-2 bg-slate-700 text-center">
+                  <li key={idx} className="mb-1  bg-slate-700 text-center">
                     <a
                       href={link.href}
-                      className="text-white hover:text-orange-600"
+                      className="text-white hover:text-orange-600 block h-full w-full p-2"
                     >
                       {link.name}
                     </a>
@@ -73,6 +75,18 @@ const Footer = () => {
               </ul>
             </div>
           ))}
+        </div>
+      
+        <div className="flex justify-between items-center mt-[2rem]">
+          <div>
+            <p>All rights preserved</p>
+          </div>
+          <div>
+            <SocialMediaIcons />
+          </div>
+          <div className="text-white">
+            <LoveIcon />
+          </div>
         </div>
       </div>
     </div>
