@@ -1,3 +1,4 @@
+import "./SectionD.css"
 const SectionD = () => {
   return (
     <div className="text-white mt-[4rem]">
@@ -8,17 +9,15 @@ const SectionD = () => {
               SUBSCRIBE TO OUR MONTHLY NEWS LETTER TO GET INFORMATION ON THE
               HAPPENINGS IN OUR GYM
             </p>
-            <div className="mt-[1rem] flex justify-between items-center bg-[var(--faintBlack)] h-[40px] ">
+            <div className="news-letter mt-[1rem] flex justify-between items-center bg-[var(--faintBlack)] h-[40px] ">
               <input
                 type="text"
-                name=""
-                id=""
                 placeholder="Enter your email..."
-                className="border-none bg-transparent text-gray-400 outline-none p-[10px] h-full"
+                className="border-none bg-transparent text-gray-400 outline-none p-[10px] h-full basis-[calc(100% - 100px)]"
               />
               <button
                 type="submit"
-                className="border-none h-full px-[1rem] bg-orange-600"
+                className="border-none h-full w-[100px] bg-orange-600 text-white"
               >
                 SEND
               </button>

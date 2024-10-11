@@ -2,8 +2,8 @@ import NavigateArrow from "@/components/NavigateArrow/NavigateArrow";
 import { FaHeart } from "react-icons/fa";
 const SectionC = () => {
   return (
-    <div className="mt-[3rem]">
-      <div className="container text-white bg-[--faintBlack] py-4 px-4">
+    <div className="mt-[3rem] ">
+      <div className="container text-white bg-[--faintBlack] py-4 px-4" >
         <div className="grid sm:grid-cols-1 md:grid-cols-2">
           <div>
             <NavigateArrow />
@@ -19,7 +19,7 @@ const SectionC = () => {
               </span>
             </button>
           </div>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 g">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10">
             <div className="p-3 bg-slate-700 flex-row items-center justify-center relative">
               <img
                 src="https://images.pexels.com/photos/6551174/pexels-photo-6551174.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -39,7 +39,7 @@ const SectionC = () => {
                 alt=""
                 className="h-full"
               />
-              <div className="absolute bottom-6 left-[2rem] bg-[rgba(0,0,0,0.8)] p-3 rounded-lg">
+              <div className="absolute bottom-6 left-[2rem] bg-[rgba(0,0,0,0.8)] p-3 rounded-lg border-[3px solid var(--faintBlack)]">
                 <p className="text-1xl">Kelvin Ndambo</p>
                 <button className="bg-orange-600 sharp px-3 border">
                   Read more
