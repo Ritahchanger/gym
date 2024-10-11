@@ -1,0 +1,31 @@
+@media (max-width: 400px) {
+  .nav .container {
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    height: fit-content;
+  }
+
+  .nav ul {
+    margin-top: 1rem;
+  }
+
+  .nav ul li {
+    position: relative;
+
+    padding-bottom: 1rem;
+  }
+
+  .nav ul li::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: var(--pumpkinOrange);
+    bottom: 0;
+    transition: all 0.5s;
+  }
+  .nav ul li:hover::before:hover {
+    width: 100%;
+  }
+}

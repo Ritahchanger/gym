@@ -9,7 +9,7 @@ const SectionA = () => {
           padding: "2rem",
         }}
       >
-        <div className="grid xsm:grid-cols-1 grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="card flex-col justify-between ">
             <NavigateArrow />
             <p className="text-4xl md:text-6xl mb-4">PERSONAL TRAINING</p>

@@ -2,6 +2,7 @@ import React from "react";
 
 import Link from "next/link";
 
+import "./navbar.css"
 import Logo from "../Logo/Logo";
 
 const Navbar = () => {
@@ -11,7 +12,7 @@ const Navbar = () => {
         <Logo />
 
         <div>
-          <ul className="flex gap-5 bg-[rgba(255,255,255,0.1)] backdrop-blur-md shadow-lg rounded-lg p-4 ">
+          <ul className="flex gap-5 md:backdrop-blur-md md:shadow-lg rounded-lg md:p-4 md:bg-[rgba(255,255,255,0.1)]">
             <li>
               <Link href="/about" className="text-white">
                 About
@@ -35,11 +36,11 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div>
+        {/* <div>
           <button className="text-[var(--pumpkinOrange)] text-4xl cursor-pointer">
             &#9776;
           </button>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
