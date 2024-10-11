@@ -1,8 +1,11 @@
-@media (max-width: 400px) {
+@media (max-width: 754px) {
   .nav .container {
     flex-direction: column;
     background: rgba(0, 0, 0, 0.7);
     height: fit-content;
+    width:90%;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
   }
 
   .nav ul {
@@ -15,17 +18,24 @@
     padding-bottom: 1rem;
   }
 
-  .nav ul li::before {
+  .nav ul li {
+    position: relative; /* Ensure the li is positioned relatively */
+}
+
+.nav ul li::before {
     position: absolute;
     content: "";
     left: 0;
-    width: 0;
+    width: 100%; /* Initially full width */
     height: 4px;
     background: var(--pumpkinOrange);
-    bottom: 0;
-    transition: all 0.5s;
-  }
-  .nav ul li:hover::before:hover {
-    width: 100%;
-  }
+    bottom: 0; /* Position the line at the bottom of the li */
+    transition: all 0.5s; /* Smooth transition for hover effect */
+    transform: scaleX(0); /* Start with the line scaled down to 0 */
+}
+
+.nav ul li:hover::before {
+    transform: scaleX(1); /* Scale the line to full width on hover */
+}
+
 }
