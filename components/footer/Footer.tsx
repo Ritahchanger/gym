@@ -50,7 +50,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="footer text-black bg-white mt-[4rem]">
+    <div className="footer text-black bg-white mt-[4rem] pt-[2rem]">
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {footerLinks.map((section) => (

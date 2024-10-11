@@ -121,12 +121,12 @@ const Hero = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-        <button className="button-next-slide absolute top-1/2 right-0 z-10 bg-[var(--pumpkinOrange)] p-2 sharp cursor-pointer btn-swap transition-all duration-500">
+        <button className="button-next-slide absolute top-1/2 right-[2rem] z-10 bg-[var(--pumpkinOrange)] p-2 sharp cursor-pointer btn-swap transition-all duration-500">
           <span>
             <FaArrowRight />
           </span>
         </button>
-        <button className="button-prev-slide absolute top-1/2 left-0 z-10 bg-[var(--pumpkinOrange)] p-2 sharp cursor-pointer btn-swap transition-all duration-500">
+        <button className="button-prev-slide absolute top-1/2 left-[2rem] z-10 bg-[var(--pumpkinOrange)] p-2 sharp cursor-pointer btn-swap transition-all duration-500">
           <span>
             <FaArrowLeft />
           </span>

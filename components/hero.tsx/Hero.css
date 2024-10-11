@@ -29,3 +29,10 @@
 
   top: 40%;
 }
+
+@media (max-width: 510px) {
+  .button-next-slide,
+  .button-prev-slide {
+    display: none;
+  }
+}
