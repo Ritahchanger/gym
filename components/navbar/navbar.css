@@ -1,3 +1,28 @@
+.nav ul li {
+  position: relative;
+
+  padding-bottom: 1rem;
+}
+
+.nav ul li {
+  position: relative;
+}
+
+.nav ul li::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--pumpkinOrange);
+  bottom: 0;
+  transition: all 0.5s;
+  transform: scaleX(0);
+}
+
+.nav ul li:hover::before {
+  transform: scaleX(1);
+}
 @media (max-width: 754px) {
   .nav .container {
     flex-direction: column;
@@ -8,38 +33,12 @@
     border-bottom-right-radius: 5px;
   }
   .navigation-container {
-    width:100%;
+    width: 100%;
   }
 
   .nav ul {
     margin-top: 1rem;
     width: 100%;
-    justify-content:space-between;
-  }
-
-  .nav ul li {
-    position: relative;
-
-    padding-bottom: 1rem;
-  }
-
-  .nav ul li {
-    position: relative;
-  }
-
-  .nav ul li::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: var(--pumpkinOrange);
-    bottom: 0;
-    transition: all 0.5s;
-    transform: scaleX(0);
-  }
-
-  .nav ul li:hover::before {
-    transform: scaleX(1);
+    justify-content: space-between;
   }
 }
