@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container flex justify-between h-16 items-center">
         <Logo />
 
-        <div>
+        <div className="navigation-container">
           <ul className="flex gap-5 md:backdrop-blur-md md:shadow-lg rounded-lg md:p-4 md:bg-[rgba(255,255,255,0.1)]">
             <li>
               <Link href="/about" className="text-white">
