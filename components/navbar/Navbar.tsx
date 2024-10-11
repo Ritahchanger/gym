@@ -14,6 +14,11 @@ const Navbar = () => {
         <div className="navigation-container">
           <ul className="flex gap-5 md:backdrop-blur-md md:shadow-lg rounded-lg md:p-4 md:bg-[rgba(255,255,255,0.1)]">
             <li>
+              <Link href="/" className="text-white">
+                Home
+              </Link>
+            </li>
+            <li>
               <Link href="/about" className="text-white">
                 About
               </Link>
